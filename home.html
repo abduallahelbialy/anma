@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Cairo:wght@200..1000&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+        rel="stylesheet">
+    <title>الصفحة الرئيسية</title>
+</head>
+
+<body>
+    <div class="home  ">
+        <!-- ///navbar/////// -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html"><img src="assets/alinma-logo.svg" alt="logo"
+                        class=" img-fluid logonav"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto px-4 mb-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">الحسابات والبطاقات <i
+                                    class="fa-solid fa-chevron-down"></i></a>
+                        </li>
+                        <li class="nav-item " id="accountStatement">
+                            <a class="nav-link  " aria-current="page" href="#">حلول الدفع
+                                <i class="fa-solid fa-chevron-down"></i></a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#"> الحوالات والمدفوعات
+                                <i class="fa-solid fa-chevron-down"></i></a>
+
+                        </li>
+
+
+
+
+                    </ul>
+                    <div class=" me-auto d-flex gap-3 align-items-center">
+
+                        <div>
+                            <select class="user">
+                                <option value="1">sara saad</option>
+                            </select>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+
+                            <div class="btn-lout">
+                                <button class=" fw-bold" onclick="gout()">تسجيل الخروج</button>
+                            </div>
+                            <span class="fiva mt-2">5 دقائق متبقية</span>
+                        </div>
+                    </div>
+                    <!-- <form class="d-flex me-auto" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
+        </nav>
+                <!-- ///navbar/////// -->
+
+<!-- ///headerone//// -->
+        <div id="extraLinks" class="extra-links  text-white py-4 d-none">
+            <div class="d-flex gap-4 align-items-center flex-wrap px-5  mx-4 links">
+
+                <a href="#" class="d-block text-white "></a>
+                <a href="#" class="d-block text-white">الحسابات</a>
+                <a href="#" class="d-block text-white">البطاقات</a>
+                <a href="#" class="d-block text-white" id="account"> كشف الحساب</a>
+                <a href="#" class="d-block text-white">البطاقات الموثقة</a>
+                <a href="#" class="d-block text-white">ادارة النقود</a>
+            </div>
+        </div>
+        <!-- ///headerone//// -->
+<!-- ///headertwo//// -->
+
+        <div id="extraLinksOne" class="extra-links-two  text-black py-4 d-none">
+            <div class="d-flex gap-5 flex-wrap px-5  mx-4 links">
+
+                <a href="accountStatement.html" class="d-block text-black acc">كشف الحساب <i
+                        class="fa-solid fa-chevron-left me-4"></i></a>
+                <a href="#" class="d-block text-black ">تقرير القيمة المضافة<i
+                        class="fa-solid fa-chevron-left me-4"></i></a>
+                <a href="#" class="d-block text-black ">كشف حساب سويفت (MT940)<i
+                        class="fa-solid fa-chevron-left me-4"></i></a>
+
+            </div>
+        </div>
+        <!-- ///headertwo//// -->
+
+        <!-- ///home-content///////// -->
+        <div class="hom-page">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="tex-time mt-3 px-4 mb-4">
+                        <span class=" text-white mb-2 fw-bold" id="dynamicDate"> </span>
+                        <h2 class=" text-white mt-4">أهلاً بعودتك ، <strong>sara</strong></h2>
+                    </div>
+                    <div class="d-flex gap-4 flex-wrap mt-4 ">
+                        <div class="one-dev flex-grow-1">
+                            <div class="blanc d-flex justify-content-between align-items-center flex-wrap">
+                                <div class="text mb-2 d-flex flex-column">
+                                    <span class="gray fw-bold">الرصيد الإجمالي</span>
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <span class=" fs-3"><strong>1.</strong>13</span>
+                                        <select name="sr" id="sr">
+                                            <option value="1">ريال سعودى</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn-change  ">التحويل </button>
+
+                            </div>
+                            <div class="cards d-flex gap-2  align-items-center mt-5">
+                                <div class="card-one d-flex flex-column ">
+                                    <div class="icon mb-2">
+
+                                        <i class="fa-solid fa-rectangle-list"></i>
+                                    </div>
+                                    <div class="text-card">
+                                        <p class="gray">الحسابات</p>
+                                        <h2><span>1.13</span> ريال سعودي</h2>
+                                    </div>
+
+                                </div>
+                                <div class="card-one d-flex flex-column ">
+                                    <div class="icon mb-2">
+
+                                        <i class="fa-solid fa-arrow-trend-up"></i>
+                                    </div>
+                                    <div class="text-card">
+                                        <p class="gray">الاستثمارات</p>
+                                        <h2><span>0.00</span> ريال سعودي</h2>
+                                    </div>
+
+                                </div>
+                                <div class="card-one d-flex flex-column ">
+                                    <div class="icon mb-2">
+
+                                        <i class="fa-solid fa-house"></i>
+                                    </div>
+                                    <div class="text-card">
+                                        <p class="gray">التمويل والودائع</p>
+                                        <h2><span>0.00</span> ريال سعودي</h2>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="two-dev flex-grow-1">
+                            <div class="text-dev">
+                                <h1>الموافقات المعلقة</h1>
+                                <hr />
+                                <div class="nothing  text-center">
+                                    <p class="  fw-bold fs-4">لا توجد موافقات</p>
+                                    <span class=" gray">مرحبًا بك في مصرف الريال، ليس لديك أي موافقات<br /> في الوقت
+                                        الحالي</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4 flex-wrap mt-5 bg-light sect-two">
+                        <div class="d-flex flex-column">
+                            <div class="col-6">
+
+                                <div class="section-dev flex-grow-1">
+                                    <div class="text-dev">
+                                        <h1>اكتشف منتجاتنا</h1>
+
+                                        <div class="cards-pay  d-flex gap-3 flex-wrap">
+                                            <div class="one-pay">
+                                                <div class="d-flex flex-column align-items-center">
+                                                    <div class="icon mb-2">
+
+                                                        <i class="fa-solid fa-rectangle-list"></i>
+                                                    </div>
+                                                    <p>نقاط البيع</p>
+                                                </div>
+                                            </div>
+                                            <div class="one-pay">
+                                                <div class="d-flex flex-column align-items-center">
+                                                    <div class="icon mb-2">
+
+                                                        <i class="fa-solid fa-shield"></i>
+                                                    </div>
+                                                    <p>جهاز التشفير</p>
+                                                </div>
+                                            </div>
+                                            <div class="one-pay mt-2">
+                                                <div class="d-flex flex-column align-items-center">
+                                                    <div class="icon mb-2">
+
+                                                        <i class="fa-solid fa-user-group"></i>
+                                                    </div>
+                                                    <p>رواتب الموظفين</p>
+                                                </div>
+                                            </div>
+                                            <div class="one-pay mt-2">
+                                                <div class="d-flex flex-column align-items-center">
+                                                    <div class="icon mb-2">
+
+                                                        <i class="fa-regular fa-credit-card"></i>
+                                                    </div>
+                                                    <p>بطاقات الراتب</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-4">
+
+                                <div class="section-dev flex-grow-1">
+                                    <div class="text-dev">
+                                        <h1>طلباتي
+                                        </h1>
+                                        <hr />
+                                        <div class="nothin  text-center">
+                                            <p class="  fw-bold fs-4">لا توجد موافقات</p>
+                                            <span class=" gray">مرحبًا بك في مصرف الريال، ليس لديك أي موافقات<br /> في
+                                                الوقت
+                                                الحالي</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="one-dev flex-grow-1">
+                            <div class="blanc d-flex justify-content-end align-items-center gap-3 flex-wrap">
+                                <div class="card-user">
+                                    <div class="d-flex justify-content-between align-items-center gap-2">
+
+                                        <div class="text-usera d-flex flex-column">
+                                            <span class="mb-2">68204807706000</span>
+                                            <span><span>1.13 </span><span>ريال سعودى .</span>
+                                                <span>68204807706000</span>
+                                            </span>
+                                        </div>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                </div>
+                                <div class="time-input">
+                                    <input type="date" name="timee" id="timea" class="form-control">
+                                </div>
+
+                            </div>
+                            <div class="content mt-3 p-2">
+                                <div class="img-chart">
+                                    <img src="assets/Screenshot 2024-11-21 142907.png" alt="" class=" img-fluid">
+                                </div>
+                                <div class="text-content mt-2 p-2">
+                                    <h1 class=" fs-5 fw-bold">آخر المعاملات
+                                    </h1>
+                                    <span>20/11/2024</span>
+                                </div>
+                                <hr>
+                                <div class="opart d-flex justify-content-between flex-wrap">
+                                    <div class="d-flex gap-3 align-items-center">
+
+                                        <div class="icon-opr d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                        </div>
+                                        <p>Outgoing SARIE Transfer
+                                        </p>
+                                    </div>
+                                    <span class="trimmed-text" data-full-text="FT24325CCHKQ"> </span>
+                                    <span>-2,923.15 SAR
+                                    </span>
+                                </div>
+                                <hr>
+                                <div class="opart-two d-flex justify-content-between flex-wrap">
+                                    <div class="d-flex gap-3 align-items-center">
+
+                                        <div class="icon-oprtwo d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-arrow-trend-down"></i>
+                                        </div>
+                                        <p>Outgoing SARIE Transfer
+                                        </p>
+                                    </div>
+                                    <span class="trimmed-text" data-full-text="FT24325CCHKQ"> </span>
+                                    <span class="pfw">1,645.24 SAR
+                                    </span>
+                                </div>
+                                <hr>
+                                <div class="opart d-flex justify-content-between flex-wrap">
+                                    <div class="d-flex gap-3 align-items-center">
+
+                                        <div class="icon-opr d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-arrow-trend-up"></i>
+                                        </div>
+                                        <p>Outgoing SARIE Transfer
+                                        </p>
+                                    </div>
+                                    <span class="trimmed-text" data-full-text="FT24325CCHKQ"> </span>
+                                    <span>-2,923.15 SAR
+                                    </span>
+                                </div>
+                                <hr>
+                                <div class="opart-two d-flex justify-content-between flex-wrap">
+                                    <div class="d-flex gap-3 align-items-center">
+
+                                        <div class="icon-oprtwo d-flex justify-content-center align-items-center">
+                                            <i class="fa-solid fa-arrow-trend-down"></i>
+                                        </div>
+                                        <p>Outgoing SARIE Transfer
+                                        </p>
+                                    </div>
+                                    <span class="trimmed-text" data-full-text="FT24325CCHKQ"> </span>
+                                    <span class="pfw">1,645.24 SAR
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="one-dev-all    me-auto">
+                            <div class="all-acounts d-flex justify-content-between align-items-center  flex-wrap">
+
+                                <h1 class=" text-dark fw-bold">حساباتك</h1>
+                                <h2 class=" fw-bold">عرض جميع الحسابات</h2>
+                            </div>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control Search me-2" type="search"
+                                    placeholder="البحث بواسطة الاسم المستعار، رقم الحساب، الآيبان" aria-label="Search">
+                                <div class="icon-search position-relative">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </form>
+                            <div class="img-card mt-4 mb-4">
+                                <div class="text-us mb3">
+                                    <h2 class=" fw-bold">حساب جاري</h2>
+                                    <span class=" fw-bold">68204807706000</span>
+                                </div>
+                                <div class="num-us d-flex flex-column mt-4">
+                                    <span class="fs-4 fw-bold">ريال سعودى <span>1.13</span></span>
+                                    <span class="grayy">68 2048 0770 6000</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="one-dev-all mt-4 mb-5  me-auto">
+                            <div class="all-acounts d-flex justify-content-between align-items-center  flex-wrap">
+
+                                <h1 class=" text-dark fw-bold">بطاقاتك</h1>
+                                <h2 class=" fw-bold">عرض كل البطاقات</h2>
+                            </div>
+
+                            <div
+                                class=" empty-cards-container mt-4 d-flex justify-content-center flex-column align-items-center">
+                                <h1 class="mt-2">لا يوجد بطاقات
+                                </h1>
+                                <p>.مرحبًا بك فى مصرف الريال، ليس لديك بطاقات فى الوقت الحالى</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- ////footer///// -->
+                    <div class="footer mt-3">
+                        <div class="d-flex justify-content-around flex-wrap text-white fw-bold ">
+                            <a href="#" class="mt-5 text-white fw-bold">English</a>
+                            <div class="d-flex flex-column align-items-center">
+                                <div class="links-footer  justify-content-center align-items-center mt-5 flex-wrap  d-flex gap-5 mb-4  ">
+                                    <p>اتصل بنا</p>
+                                    <p>الأسئلة الشائعة</p>
+                                    <p>الخصوصية</p>
+                                    <p>الشروط والأحكام</p>
+                                </div>
+                                <span class="cpay">© 2024 مصرف الريال</span>
+                            </div>
+                            <div class="phone  d-flex gap-2 align-items-center">
+                                <span>9200 28000</span>
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ////footer///// -->
+                </div>
+            </div>
+        </div>
+        <!-- ///home-content///////// -->
+
+    </div>
+    <!-- ///js///// -->
+     <!-- ///go login///// -->
+     <script>
+        function gout() {
+            window.location.href = "index.html";
+        }
+    </script>
+        <!-- ///go login///// -->
+
+        <!-- ///header//// -->
+
+    <script>
+        document.getElementById("accountStatement")
+            .addEventListener("click", function () {
+                const extraLinks = document.getElementById("extraLinks");
+                extraLinks.classList.toggle("d-none");
+            });
+
+    </script>
+    <!-- ///header//// -->
+    <script>
+        document.getElementById("account")
+            .addEventListener("click", function () {
+                const extraLinksOne = document.getElementById("extraLinksOne");
+                extraLinksOne.classList.toggle("d-none");
+            });
+
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
