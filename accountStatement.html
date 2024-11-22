@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css.map">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.5/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.5/vfs_fonts.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -103,6 +105,8 @@
         <!-- ///headertwo//// -->
 
         <!-- ///home-content///////// -->
+        
+        <!-- ////test datepdf////// -->
         <div class="accounts-page">
             <div class="container-fluid">
                 <div class="row">
@@ -226,32 +230,213 @@
                             </div>
                         </div>
                         <div class="one-dev-all-pdf    me-auto" id="pdfSection">
-                            <div class="all-acounts d-flex justify-content-between align-items-center  flex-wrap">
+                            <div class="container-ta">
+                                <div class="d-flex justify-content-between align-items-center flex-wrap groun">
+                                    <div class="d-flex flex-column">
 
-                                <h1 class=" text-dark fw-bold">حساباتك</h1>
-                                <h2 class=" fw-bold">عرض جميع الحسابات</h2>
-                            </div>
-                            <form class="d-flex mt-3" role="search">
-                                <input class="form-control Search me-2" type="search"
-                                    placeholder="البحث بواسطة الاسم المستعار، رقم الحساب، الآيبان" aria-label="Search">
-                                <div class="icon-search position-relative">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                        <h2 class="account-number">68204807706000</h2>
+                                        <span class="ssa">68204807706000
+                                        </span>
+                                    </div>
+                                    <button type="button" class="export-button pdf">تصدير</button>
+
                                 </div>
-                            </form>
-                            <div class="img-card mt-4 mb-4">
-                                <div class="text-us mb3">
-                                    <h2 class=" fw-bold">حساب جاري</h2>
-                                    <span class=" fw-bold">68204807706000</span>
-                                </div>
-                                <div class="num-us d-flex flex-column mt-4">
-                                    <span class="fs-4 fw-bold">ريال سعودى <span>1.13</span></span>
-                                    <span class="grayy">68 2048 0770 6000</span>
+                                <hr />
+
+                                <div class="header">
+
+                                    <p class="date-info">
+                                        التاريخ :
+                                        <span class="text-black">2024-10-20 - 2024-11-20</span>
+                                    </p>
+                                    <p class="date-info"> المعاملات :
+                                        <span class="text-black">معاملة 213</span>
+                                    </p>
                                 </div>
 
+                                <table id="myTable">
+                                    <!-- ///logo pdf/// -->
+                                    <div class="logdd ">
+                                        <!-- footer -->
+
+                                    </div>
+                                    <!--  -->
+                                    <!-- ////date fake/// -->
+
+                                    <div class=" date-fake mb-5">
+
+                                        <div class="d-flex justify-content-between p-2">
+                                            <img src="assets/lgopdf.png" alt="">
+                                            <img src="assets/Screenshot_2024-11-22_153239-removebg-preview.png" alt="">
+                                        
+                                        </div>
+                                        <div class="d-flex justify-content-center ">
+                                            <div class="d-flex flex-column align-items-center">
+                                                <h2>كشف الحساب</h2>
+                                                <h2 class="stat-account">Account Statement</h2>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex  justify-content-around  gap-5 mt-5 mb-5">
+                                            <div class="d-flex gap-5 align-items-center ">
+                                        
+                                                <div class="cleint-fille d-flex flex-column align-items-center ">
+                                                    <h3 class=" fw-semibold">ملف العميل</h3>
+                                                    <h3 class="stat-accountt fw-bold text-nowrap">Business CIF</h3>
+                                                </div>
+                                                <div class="bac-client me-5 ">
+                                                    <div class="fw-bold">4720518</div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex gap-4 align-items-center ">
+                                        
+                                                <div class="cleint-fille d-flex flex-column align-items-center ">
+                                                    <h3 class=" fw-semibold  ">تاريخ كشف الحساب</h3>
+                                                    <h3 class="stat-accountt fw-bold text-nowrap" style="font-size: 21px;">Account Statement Date</h3>
+                                                </div>
+                                                <div class="bac-clientt me-2 ">
+                                                    <div class=" fw-bold text-nowrap "  style="font-size: 11px;">From [01/11/2023]To[08/11/2024]</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dtiles-cleints d-flex justify-content-center gap-3  mb-5">
+                                            <div class="dev-user-one mb-5">
+                                        
+                                                <div class="name-user d-flex flex-column">
+                                                    <p class="mauser">اسم العميل</p>
+                                                    <p> Customer Name </p>
+                                                </div>
+                                                <div class="name-user-t d-flex flex-column">
+                                                    <p> Nibras Almasee Lltjart Company </p>
+                                                </div>
+                                            </div>
+                                            <div class="dev-user-one mb-5">
+                                        
+                                                <div class="name-user d-flex flex-column">
+                                                    <div class="d-flex justify-content-between  align-items-center ">
+                                        
+                                                        <p class="mauser">رقم الحساب</p>
+                                                        <p class="mauser">عملة الحساب</p>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between  align-items-center">
+                                        
+                                                        <p>Account Number</p>
+                                                        <p>Currency </p>
+                                                    </div>
+                                                </div>
+                                                <div class="name-user-t d-flex flex-column">
+                                                    <div class="d-flex justify-content-between ">
+                                                        <p>68204720518000</p>
+                                                        <p>SAR</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ////images date pdf///// -->
+                                    <img src="" alt="" class="top-pdf" hidden>
+                                    <!-- <img src="" alt="" class="top-img" hidden> -->
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <div class="d-flex flex-column">
+                                                    <div >Transaction Date</div>
+                                                    <div class=" d-none">تاريخ <div>العملية</div>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="d-flex flex-column">
+                                                    <div>#Reference</div>
+                                                    <div class=" d-none"> الرقم <div>المرجعى</div>
+                                                    </div>
+
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="d-flex flex-column">
+                                                    <div>Transaction Description</div>
+                                                    <div class=" d-none">تفاصيل <div>العملية</div>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="d-flex flex-column">
+                                                    <div>Credit/Debit</div>
+                                                    <div class=" d-none">
+                                                       دائن / مدين
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th>
+                                                <div class="d-flex flex-column">
+                                                    <div> Balance</div>
+                                                    <div class=" d-none">الرصيد</div>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>05/11/2023</td>
+                                            <td>ATM02203308225359516
+                                                3315427013000012253591
+                                                105053553</td>
+                                            <td>ﺷﺮﺍﺀ ﻣﻦ ﺣﺴﺎﺏ **SAR 32 8000 ﻣﻦ FARAJ10:48 ﺭﻗﻢPM 2023-11-01 ﻓﻲ ALMADINA
+                                                HOTILEﺍﻟﻤﺮﺟﻊ ﺗﺎﺭﻳﺦ ﺍﻻﺳﺘﺤﻘﺎﻕ FARAJ ALMADINA
+                                                HOTILEMADINA SA ﺍﻟﻌﻤﻮﻟﺔ ﺳﻌﺮ ﺍﻟﺼﺮﻑ</td>
+                                            <td>- 32.00</td>
+                                            <td>11,035.24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05/11/2023</td>
+                                            <td>
+
+                                                FT24325S89SS</td>
+                                            <td>ﺷﺮﺍﺀ ﻣﻦ ﺣﺴﺎﺏ **SAR 32 8000 ﻣﻦ FARAJ10:48 ﺭﻗﻢPM 2023-11-01 ﻓﻲ ALMADINA
+                                                HOTILEﺍﻟﻤﺮﺟﻊ ﺗﺎﺭﻳﺦ ﺍﻻﺳﺘﺤﻘﺎﻕ FARAJ ALMADINA
+                                                HOTILEMADINA SA ﺍﻟﻌﻤﻮﻟﺔ ﺳﻌﺮ ﺍﻟﺼﺮﻑ</td>
+                                            <td>- 32.00</td>
+                                            <td>11,035.24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05/11/2023</td>
+                                            <td>
+
+                                                FT24325S89SS</td>
+                                            <td>ﺷﺮﺍﺀ ﻣﻦ ﺣﺴﺎﺏ **SAR 32 8000 ﻣﻦ FARAJ10:48 ﺭﻗﻢPM 2023-11-01 ﻓﻲ ALMADINA
+                                                HOTILEﺍﻟﻤﺮﺟﻊ ﺗﺎﺭﻳﺦ ﺍﻻﺳﺘﺤﻘﺎﻕ FARAJ ALMADINA
+                                                HOTILEMADINA SA ﺍﻟﻌﻤﻮﻟﺔ ﺳﻌﺮ ﺍﻟﺼﺮﻑ</td>
+                                            <td>- 32.00</td>
+                                            <td>11,035.24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05/11/2023</td>
+                                            <td>
+
+                                                FT24325S89SS</td>
+                                            <td>ﺷﺮﺍﺀ ﻣﻦ ﺣﺴﺎﺏ **SAR 32 8000 ﻣﻦ FARAJ10:48 ﺭﻗﻢPM 2023-11-01 ﻓﻲ ALMADINA
+                                                HOTILEﺍﻟﻤﺮﺟﻊ ﺗﺎﺭﻳﺦ ﺍﻻﺳﺘﺤﻘﺎﻕ FARAJ ALMADINA
+                                                HOTILEMADINA SA ﺍﻟﻌﻤﻮﻟﺔ ﺳﻌﺮ ﺍﻟﺼﺮﻑ</td>
+                                            <td>- 32.00</td>
+                                            <td>11,035.24</td>
+                                        </tr>
+
+
+                                        <!-- أضف المزيد من الصفوف هنا -->
+                                    </tbody>
+
+                                </table>
+
+                                <div class="btn-next-table mt-4 d-flex justify-content-center  ">
+                                    <button type="submit"
+                                        class="fw-bold  d-flex align-items-center gap-2 justify-content-center "> تحميل
+                                        المزيد <i class="fa-regular fa-circle-down"></i></button>
+                                </div>
                             </div>
+
 
                         </div>
-                       
+
 
                     </div>
                     <!-- ////footer///// -->
@@ -274,6 +459,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- ////footer///// -->
                 </div>
             </div>
@@ -281,7 +467,286 @@
         <!-- ///home-content///////// -->
 
     </div>
+
+
+
     <!-- ///js///// -->
+
+
+    <!-- ///pdf/// -->
+    <script type="text/javascript" src="js/clouslibs.js"></script>
+    <script src="js/cloudflaretwo.js"></script>
+    <!-- Import the xlsx library -->
+
+    <script src="js/cloudflare.js"></script>
+
+    <script type="text/javascript" src="js/htmlcanc.js"></script>
+    <!-- ////exportToPDF and print/// -->
+
+    <script src="js/dataTable.js"></script>
+    <script src="js/dataTables_buttons.min.js"></script>
+    <script src="js/jszip.min.js"></script>
+    <script src="js/pdf-print.js"></script>
+    <script src="js/buttons.html5.min.js"></script>
+    <script src="js/buttons.print.min.js"></script>
+
+
+    <!-- DataTable -->
+
+    <!-- DataTable -->
+    <script>
+        // Define custom fonts for pdfMake
+        pdfMake.fonts = {
+            cairo: {
+                normal: "http://127.0.0.1:5500/fonts/alfont_com_arial-1.ttf",
+                bold: "http://127.0.0.1:5500/fonts/alfont_com_AlFont_com_arialbd (1).ttf",
+                italics: "http://127.0.0.1:5500/fonts/alfont_com_AlFont_com_arialbd (1).ttf",
+                bolditalics: "http://127.0.0.1:5500/fonts/alfont_com_AlFont_com_arialbd (1).ttf",
+            },
+        };
+
+        // Initialize DataTable with buttons for PDF, Excel, and Print
+        $(document).ready(function () {
+            $('#myTable').DataTable({
+                paginate: true,
+                pageLength: 7,
+                language: {
+                    paginate: {
+                        previous: `<i class="fa-solid fa-angles-left"></i>`,
+                        next: `<i class="fa-solid fa-angles-right"></i>`,
+                    },
+                    sProcessing: "جارٍ التحميل...",
+                    sLengthMenu: "أظهر MENU مدخلات",
+                    sZeroRecords: "لم يعثر على أية سجلات",
+                    sInfo: "إظهار النتائج من START - END",
+                    sInfoEmpty: "يعرض 0 إلى 0 من أصل 0 سجل",
+                    sInfoFiltered: "(منتقاة من مجموع MAX مُدخل)",
+                    sInfoPostFix: "",
+                },
+                dom: 'Bfrtip',
+                buttons: [
+                    {
+                        extend: "pdfHtml5",
+                        text: "Export PDF",
+                        sCharset: "utf8",
+                        exportOptions: { columns: ":visible" },
+                        customize: function (doc) {
+                            doc.pageOrientation = 'landscape';
+
+
+
+                            doc.content.unshift({
+                                image: $('.top-pdf').attr('src'),
+                                width: 777,
+                                margin: [0, 0, 0, 0], // [left, top, right, bottom]
+                                alignment: 'center'
+                            });
+                            // doc.content.unshift({
+                            //     image: $('.top-img').attr('src'),
+                            //     width: 800,
+                            //     margin: [0, 0, 0, 0], // [left, top, right, bottom]
+                            //     alignment: 'center'
+                            // });
+
+                            // Remove title
+                            delete doc.content[1];
+
+                            // Set page margins
+                            doc.pageMargins = [32, 25, 32, 25];
+
+                            // Footer with page numbers
+                       doc.footer = function (currentPage, pageCount) {
+                                return {
+                                    columns: [
+                                        {
+                                            text: '',
+                                            alignment: 'center',
+                                            margin: [0],
+                                            color: '#219b7e',
+                                        },
+                                        {
+                                            stack: [
+                                                {
+                                                    text: `${currentPage}`, // رقم الصفحة
+                                                    alignment: 'center',
+                                                    width: 40,
+                                                    fontSize: 12,
+                                                    bold: true,
+                                                    margin: [0, 5, 0, 0],
+                                                    color: '#000',
+                                                    background: '#d3c8bd',
+                                                    height: 20,
+                                                    border: [false, false, false, false], // بدون حدود
+                                                },
+                                            ],
+                                            width: '*', // يتم توسيطه تلقائيًا
+                                            margin: [0, 0, 10, 0]
+                                        },
+                                        {
+                                            text: `Page Number `,
+                                            alignment: 'right',
+                                            margin: [0, 5, 0, 0],
+                                            color: '#b08c5c',
+                                            bold: true,
+                                        },
+                                    ],
+                                    margin: [10, 0, 10, 10], // المسافات الخارجية
+                                };
+                            };
+
+                            doc.content[2].table.headerRows = 1;
+                            // ****************
+                            doc.defaultStyle.font = "cairo";
+                            doc.defaultStyle.alignment = "right";
+                            doc.defaultStyle.fontSize = 9;
+                            // doc.defaultStyle.padding = 14;
+
+                            doc.defaultStyle.borderLeft = '1px solid green';
+                            console.log(doc["styles"]);
+                            doc.styles.tableHeader.alignment = "center";
+                            doc.styles.tableHeader.fontSize = 9;
+                            let titleTable = doc.content;
+                            // Table styling
+                            doc.defaultStyle.font = "cairo";
+                            doc.defaultStyle.alignment = "right";
+                            doc.defaultStyle.fontSize = 9;
+                            doc.styles.tableHeader.alignment = "center";
+                            doc.styles.tableHeader.fontSize = 9;
+
+                            // Set column widths
+                            doc.content[2].table.widths = [108, 108, 230, 168, 104];
+
+                            let tableContent = doc.content[2].table.body;
+
+                            // Style the table header
+                            for (let i = 0; i < tableContent[0].length; i++) {
+                                tableContent[0][i].fillColor = '#522c23';
+                                tableContent[0][i].color = '#fff';
+                                tableContent[0][i].bold = true;
+                                tableContent[0][i].alignment = 'center';
+                                tableContent[0][i].fontSize = 9;
+                                tableContent[0][i].margin = [5, 10, 5, 3];
+                                tableContent[0][i].border = [true, true, true, true];
+                                tableContent[0][i].borderColor = (i !== 0) ? ['#fff', '#522c23', '#fff', '#fff'] : ['#fff', '#522c23', '#fff', '#fff'];
+                            }
+
+                            // Style the table rows
+                            for (let i = 1; i < tableContent.length; i++) {
+                                tableContent[i].forEach(cell => {
+                                    cell.fillColor = (i % 2 === 0) ? '#cac0b6' : '#cac0b6';
+                                });
+                            }
+
+                            // Handle Arabic text and reverse it
+                            var arabic = /[\u0600-\u06FF]/;
+                            for (let i = 0; i < tableContent.length; i++) {
+                                for (let k = 0; k < tableContent[i].length; k++) {
+                                    if (arabic.test(tableContent[i][k]["text"])) {
+                                        tableContent[i][k]["text"] = tableContent[i][k]["text"]
+                                            .split(" ")
+                                            .reverse()
+                                            .join("  ");
+                                    } else {
+                                        tableContent[i][k]["text"] = tableContent[i][k]["text"]
+                                            .split(" ")
+                                            .join("  ");
+                                    }
+                                    tableContent[i][k].alignment = 'right';
+                                    tableContent[i][k].fontSize = 9;
+                                    tableContent[i][k].border = [true, true, true, true];
+                                    tableContent[i][k].borderColor = (k !== 0) ? ['#fff', '#522c23', '#fff', '#fff'] : ['#fff', '#522c23', '#fff', '#fff'];
+                                }
+                            }
+
+                            // Define the table layout
+                            doc.content[2].layout = {
+                                hLineWidth: function () { return 1; },
+                                vLineWidth: function () { return 3; },
+                                paddingLeft: function (i) { return (i === 0) ? 0 : 10; },
+                                paddingRight: function (i) { return (i === 0) ? 0 : 2; },
+                                paddingTop: function () { return 2; },
+                                paddingBottom: function () { return 3; }
+                            };
+
+                            // Add footer at the bottom
+
+                        },
+                        exportOptions: {
+                            columns: [4, 3, 2, 1, 0],
+                        }
+
+                    },
+                    {
+                        extend: "print",
+                        text: "Export Print",
+                        sCharset: "utf8",
+                        exportOptions: { columns: ":visible" }
+
+                    },
+                    {
+                        extend: "excelHtml5",
+                        text: "Export Excel",
+                        sCharset: "utf8",
+                        exportOptions: { columns: ":visible" }
+                    }
+                ]
+            });
+
+            // Custom button click events
+
+            $(".pdf").on("click", function () {
+                $(".date-fake").show();
+                // $(".logdd").show();
+
+                html2canvas(document.getElementsByClassName("date-fake")[0], {
+                    useCORS: true,
+                }).then(function (canvas) {
+                    var imageURL = canvas.toDataURL("image/png");
+                    document.querySelector('.top-pdf').src = imageURL;
+
+                });
+                // html2canvas(document.getElementsByClassName("logdd")[0], {
+                //     useCORS: true,
+                // }).then(function (canvas) {
+                //     var imageURL = canvas.toDataURL("image/png");
+                //     document.querySelector('.top-img').src = imageURL;
+
+                // });
+
+                setTimeout(() => {
+
+                    $(".buttons-pdf").click();
+
+                    setTimeout(() => {
+                        $(".date-fake").hide();
+                        // $(".logdd").hide();
+                    }, 1000);
+                }, 2000);
+
+            });
+            $(".excel").on("click", function () {
+                $(".buttons-excel").click();
+            });
+            $(".print").on("click", function () {
+                $(".buttons-print").click();
+            });
+        });
+
+        $(".pagination span").on("click", function () {
+            $(".pagination span").removeClass("active-pag");
+            $(this).addClass("active-pag");
+        });
+        // Search functionality
+        $("#searchTable").on("keyup", function () {
+            $("#myTable").DataTable().search($(this).val()).draw();
+        });
+
+        // Page length selection
+        $("#selectLength").on("change", function () {
+            $("#myTable").DataTable().page.len(this.options[this.selectedIndex].innerHTML).draw();
+        });
+
+    </script>
     <!-- ///go login///// -->
     <script>
         function gout() {
@@ -310,15 +775,15 @@
 
     </script>
     <!-- //show elment section pdf//// -->
-     <script>
-            const showPdfButton = document.getElementById('showPdfButton');
-            const pdfSection = document.getElementById('pdfSection');
+    <script>
+        const showPdfButton = document.getElementById('showPdfButton');
+        const pdfSection = document.getElementById('pdfSection');
 
-            showPdfButton.addEventListener('click', () => {
-                pdfSection.style.display = 'block';
-            });
+        showPdfButton.addEventListener('click', () => {
+            pdfSection.style.display = 'block';
+        });
 
-     </script>
+    </script>
     <!-- //show elment section pdf//// -->
 
     <script src="js/bootstrap.bundle.min.js"></script>
