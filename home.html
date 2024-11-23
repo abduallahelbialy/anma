@@ -266,7 +266,7 @@
                                 <div class="text-content mt-2 p-2">
                                     <h1 class=" fs-5 fw-bold">آخر المعاملات
                                     </h1>
-                                    <span>20/11/2024</span>
+                                    <span id="dateE"></span>
                                 </div>
                                 <hr>
                                 <div class="opart d-flex justify-content-between flex-wrap">
@@ -279,7 +279,7 @@
                                         </p>
                                     </div>
                                     <span class="trimmed-text" data-full-text="FT24325CCHKQ"> </span>
-                                    <span>-2,923.15 SAR
+                                    <span> SAR
                                     </span>
                                 </div>
                                 <hr>
@@ -293,7 +293,7 @@
                                         </p>
                                     </div>
                                     <span class="trimmed-text" data-full-text="FT24325CCHKQ"> </span>
-                                    <span class="pfw">1,645.24 SAR
+                                    <span class="pfw"> SAR
                                     </span>
                                 </div>
                                 <hr>
@@ -307,7 +307,7 @@
                                         </p>
                                     </div>
                                     <span class="trimmed-text" data-full-text="FT24325CCHKQ"> </span>
-                                    <span>-2,923.15 SAR
+                                    <span> SAR
                                     </span>
                                 </div>
                                 <hr>
@@ -321,7 +321,7 @@
                                         </p>
                                     </div>
                                     <span class="trimmed-text" data-full-text="FT24325CCHKQ"> </span>
-                                    <span class="pfw">1,645.24 SAR
+                                    <span class="pfw"> SAR
                                     </span>
                                 </div>
                             </div>
@@ -422,6 +422,18 @@
                 extraLinksOne.classList.toggle("d-none");
             });
 
+    </script>
+    <script>
+        /////deteE////
+        const today = new Date();
+
+        const day = today.getDate().toString().padStart(2, '0');
+        const month = (today.getMonth() + 1).toString().padStart(2, '0');
+        const year = today.getFullYear();
+
+        const formattedDate = `${day}/${month}/${year}`;
+
+        document.getElementById('dateE').textContent = formattedDate;
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js.map"></script>

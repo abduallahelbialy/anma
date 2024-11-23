@@ -792,10 +792,10 @@ tbody tr:hover {
 }
 /* ///pdf style////// */
 .stat-account{
-  color: #b29779;
+  color: #91795f;
   font-size: 22px;
   font-family: normal;
-  font-weight: 500;
+  /* font-weight: bold; */
 }
 .stat-accountt {
   color:  #91795f;
@@ -968,6 +968,10 @@ tbody tr:hover {
   .img-card {
     width: 100%;
   }
+  .btn-lout button {
+    width: 120px;
+    
+}
   .img-pdfff{
     max-width: 89px !important;
   }
