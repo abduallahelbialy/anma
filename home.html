@@ -71,28 +71,30 @@
                 </div>
             </div>
         </nav>
-                <!-- ///navbar/////// -->
+        <!-- ///navbar/////// -->
 
-<!-- ///headerone//// -->
+        <!-- ///headerone//// -->
         <div id="extraLinks" class="extra-links  text-white py-4 d-none">
             <div class="d-flex gap-4 align-items-center flex-wrap px-5  mx-4 links">
 
                 <a href="#" class="d-block text-white "></a>
                 <a href="#" class="d-block text-white">الحسابات</a>
                 <a href="#" class="d-block text-white">البطاقات</a>
-                <a href="#" class="d-block text-white" id="account"> كشف الحساب</a>
+                <a href="#" class="d-block text-white" id="account" onclick="goaccount()"> كشف الحساب</a>
                 <a href="#" class="d-block text-white">البطاقات الموثقة</a>
                 <a href="#" class="d-block text-white">ادارة النقود</a>
             </div>
         </div>
         <!-- ///headerone//// -->
-<!-- ///headertwo//// -->
+        <!-- ///headertwo//// -->
 
         <div id="extraLinksOne" class="extra-links-two  text-black py-4 d-none">
             <div class="d-flex gap-5 flex-wrap px-5  mx-4 links">
 
-                <a href="accountStatement.html" class="d-block text-black acc">كشف الحساب <i
-                        class="fa-solid fa-chevron-left me-4"></i></a>
+                <button  class="d-block text-black accs" onclick="goaccount()">كشف الحساب 
+                    <i
+                        class="fa-solid fa-chevron-left me-4"></i>
+                </button>
                 <a href="#" class="d-block text-black ">تقرير القيمة المضافة<i
                         class="fa-solid fa-chevron-left me-4"></i></a>
                 <a href="#" class="d-block text-black ">كشف حساب سويفت (MT940)<i
@@ -374,7 +376,8 @@
                         <div class="d-flex justify-content-around flex-wrap text-white fw-bold ">
                             <a href="#" class="mt-5 text-white fw-bold">English</a>
                             <div class="d-flex flex-column align-items-center">
-                                <div class="links-footer  justify-content-center align-items-center mt-5 flex-wrap  d-flex gap-5 mb-4  ">
+                                <div
+                                    class="links-footer  justify-content-center align-items-center mt-5 flex-wrap  d-flex gap-5 mb-4  ">
                                     <p>اتصل بنا</p>
                                     <p>الأسئلة الشائعة</p>
                                     <p>الخصوصية</p>
@@ -396,15 +399,15 @@
 
     </div>
     <!-- ///js///// -->
-     <!-- ///go login///// -->
-     <script>
+    <!-- ///go login///// -->
+    <script>
         function gout() {
             window.location.href = "index.html";
         }
     </script>
-        <!-- ///go login///// -->
+    <!-- ///go login///// -->
 
-        <!-- ///header//// -->
+    <!-- ///header//// -->
 
     <script>
         document.getElementById("accountStatement")
@@ -434,6 +437,11 @@
         const formattedDate = `${day}/${month}/${year}`;
 
         document.getElementById('dateE').textContent = formattedDate;
+    </script>
+    <script>
+        function goaccount (){
+window.location.href="accountStatement.html";
+        }
     </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js.map"></script>
