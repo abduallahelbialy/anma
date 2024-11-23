@@ -715,6 +715,39 @@
                                             <td>- 32.00</td>
                                             <td>11,035.24</td>
                                         </tr>
+                                        <tr>
+                                            <td>05/11/2023</td>
+                                            <td>
+
+                                                FT24325S89SS</td>
+                                        <td>ﺷﺮﺍﺀ ﻣﻦ ﺣﺴﺎﺏ **SAR 32 8000 ﻣﻦ FARAJ 10:48 ﺭﻗﻢPM 2023-11-01 ﻓﻲ ALMADINA
+                                            HOTILE ﺍﻟﻤﺮﺟﻊ ﺗﺎﺭﻳﺦ ﺍﻻﺳﺘﺤﻘﺎﻕ FARAJ ALMADINA HOTILE MADINA SA ﺍﻟﻌﻤﻮﻟﺔ ﺳﻌﺮ
+                                            ﺍﻟﺼﺮﻑ</td>
+                                            <td>- 32.00</td>
+                                            <td>11,035.24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05/11/2023</td>
+                                            <td>
+
+                                                FT24325S89SS</td>
+                                        <td>ﺷﺮﺍﺀ ﻣﻦ ﺣﺴﺎﺏ **SAR 32 8000 ﻣﻦ FARAJ 10:48 ﺭﻗﻢPM 2023-11-01 ﻓﻲ ALMADINA
+                                            HOTILE ﺍﻟﻤﺮﺟﻊ ﺗﺎﺭﻳﺦ ﺍﻻﺳﺘﺤﻘﺎﻕ FARAJ ALMADINA HOTILE MADINA SA ﺍﻟﻌﻤﻮﻟﺔ ﺳﻌﺮ
+                                            ﺍﻟﺼﺮﻑ</td>
+                                            <td>- 32.00</td>
+                                            <td>11,035.24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05/11/2023</td>
+                                            <td>
+
+                                                FT24325S89SS</td>
+                                        <td>ﺷﺮﺍﺀ ﻣﻦ ﺣﺴﺎﺏ **SAR 32 8000 ﻣﻦ FARAJ 10:48 ﺭﻗﻢPM 2023-11-01 ﻓﻲ ALMADINA
+                                            HOTILE ﺍﻟﻤﺮﺟﻊ ﺗﺎﺭﻳﺦ ﺍﻻﺳﺘﺤﻘﺎﻕ FARAJ ALMADINA HOTILE MADINA SA ﺍﻟﻌﻤﻮﻟﺔ ﺳﻌﺮ
+                                            ﺍﻟﺼﺮﻑ</td>
+                                            <td>- 32.00</td>
+                                            <td>11,035.24</td>
+                                        </tr>
 
 
                                         <!-- أضف المزيد من الصفوف هنا -->
@@ -794,7 +827,7 @@
         pdfMake.fonts = {
             cairo: {
                 normal: "https://anma.vercel.app/fonts/alfont_com_arial-1.ttf",
-                bold: "https://anma.vercel.app/fonts/alfont_com_AlFont_com_arialbd (1).ttf",
+                bold: "https://anma.vercel.app/fonts/alfont_com_HONORSansArabicUI-EB.ttf",
                 italics: "https://anma.vercel.app/fonts/alfont_com_AlFont_com_arialbd (1).ttf",
                 bolditalics: "https://anma.vercel.app/fonts/alfont_com_AlFont_com_arialbd (1).ttf",
             },
@@ -896,21 +929,19 @@
                             // ****************
                             doc.defaultStyle.font = "cairo";
                             doc.defaultStyle.alignment = "right";
-                            doc.defaultStyle.fontSize = 9;
+                            doc.defaultStyle.fontSize = 10;
                             // doc.defaultStyle.padding = 14;
 
                             doc.defaultStyle.borderLeft = '1px solid green';
                             console.log(doc["styles"]);
                             doc.styles.tableHeader.alignment = "center";
-                            doc.styles.tableHeader.fontSize = 9;
                             let titleTable = doc.content;
                             // Table styling
                             doc.defaultStyle.font = "cairo";
                             doc.defaultStyle.alignment = "right";
-                            doc.defaultStyle.fontSize = 9;
                             doc.styles.tableHeader.alignment = "center";
-                            doc.styles.tableHeader.fontSize = 9;
-
+                            doc.styles.tableHeader.fontSize = 10;
+console.log(doc)
                             // Set column widths
                             doc.content[2].table.widths = [108, 108, 230, 168, 104];
 
@@ -922,7 +953,7 @@
                                 tableContent[0][i].color = '#fff';
                                 tableContent[0][i].bold = true;
                                 tableContent[0][i].alignment = 'center';
-                                tableContent[0][i].fontSize = 9;
+                                tableContent[0][i].fontSize = 10;
                                 tableContent[0][i].margin = [5, 10, 5, 3];
                                 tableContent[0][i].border = [true, true, true, true];
                                 tableContent[0][i].borderColor = (i !== 0) ? ['#fff', '#522c23', '#fff', '#fff'] : ['#fff', '#522c23', '#fff', '#fff'];
@@ -952,7 +983,7 @@
                                             .join("  ");
                                     }
                                     tableContent[i][k].alignment = 'right';
-                                    tableContent[i][k].fontSize = 9;
+                                    tableContent[i][k].fontSize = 10;
                                     tableContent[i][k].border = [true, true, true, true];
                                     tableContent[i][k].borderColor = (k !== 0) ? ['#fff', '#522c23', '#fff', '#fff'] : ['#fff', '#522c23', '#fff', '#fff'];
                                 }
