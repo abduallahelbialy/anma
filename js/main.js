@@ -80,30 +80,45 @@ startCountdown();
     document.addEventListener("DOMContentLoaded", setDynamicDate);
     //time in home screen/////
 ///account-page date style/////
-const dateInput = document.getElementById('dateInput');
-const popup = document.getElementById('popup');
-const applyDate = document.getElementById('applyDate');
-const startDate = document.getElementById('startDate');
-const endDate = document.getElementById('endDate');
-const selectedDate = document.getElementById('selectedDate');
+const dateInput = document.getElementById("dateInput");
+const popup = document.getElementById("popup");
+const applyDate = document.getElementById("applyDate");
+const startDate = document.getElementById("startDate");
+const endDate = document.getElementById("endDate");
+const selectedDate = document.getElementById("selectedDate");
+
+// وظيفة لتنسيق التاريخ
+const formatDate = (date) => {
+  const dateObj = new Date(date);
+  const day = dateObj.getDate();
+  const month = dateObj.getMonth() + 1; // الشهور تبدأ من 0
+  const year = dateObj.getFullYear();
+  return `${day}/${month}/${year}`;
+};
 
 // فتح النافذة عند النقر على العنصر
-dateInput.addEventListener('click', () => {
-  popup.style.display = 'block';
+dateInput.addEventListener("click", () => {
+  popup.style.display = "block";
 });
 
 // تأكيد التاريخ وإغلاق النافذة
-applyDate.addEventListener('click', () => {
+applyDate.addEventListener("click", () => {
   const start = startDate.value;
   const end = endDate.value;
 
   if (start && end) {
-    selectedDate.textContent = `${start} - ${end}`;
-    popup.style.display = 'none';
+    // تنسيق التواريخ
+    const formattedStart = formatDate(start);
+    const formattedEnd = formatDate(end);
+
+    // عرض التاريخ بصيغة جديدة
+    selectedDate.textContent = `${formattedStart} - ${formattedEnd}`;
+    popup.style.display = "none";
   } else {
-    alert('يرجى اختيار نطاق تاريخ صحيح.');
+    alert("يرجى اختيار نطاق تاريخ صحيح.");
   }
 });
+
 
 // إغلاق النافذة عند النقر خارجها
 document.addEventListener('click', (event) => {
