@@ -262,7 +262,7 @@
 
                                     <div class=" date-fake mb-5">
 
-                                        <div class="d-flex justify-content-between p-2">
+                                        <div class="d-flex justify-content-between p-2 ">
                                             <img src="assets/lgopdf.png" alt="" class=" img-fluid img-pdfff">
                                             <img src="assets/Screenshot_2024-11-22_153239-removebg-preview.png" alt=""
                                                 class=" img-fluid img-pdfff ">
@@ -911,7 +911,7 @@
                             doc.content.unshift({
                                 image: $('.top-pdf').attr('src'),
                                 width: 777,
-                                margin: [0, 0, 0, 7], // [left, top, right, bottom]
+                                margin: [0, -40, 0, 7], // [left, top, right, bottom]
                                 alignment: 'center'
                             });
                             doc.content.push({
@@ -925,7 +925,7 @@
                             delete doc.content[1];
 
                             // Set page margins
-                            doc.pageMargins = [32, 30, 32, 36];
+                            doc.pageMargins = [32, 45, 32, 50];
 
                             // Footer with page numbers
                             doc.footer = function (currentPage, pageCount) {
@@ -944,9 +944,9 @@
                                                         {
                                                             type: 'rect',
                                                             x: 0,
-                                                            y: -5,
-                                                            w: 140,
-                                                            h: 40,
+                                                            y: -4,
+                                                            w: 170,
+                                                            h: 53,
                                                             color: '#d3c8bd', // لون الخلفية
                                                         },
                                                     ],
@@ -957,7 +957,7 @@
                                                     width: 40,
                                                     fontSize: 12,
                                                     bold: false,
-                                                    margin: [-40, -23, 5, 15], // لتوسيط النص داخل المستطيل
+                                                    margin: [-40, -50, 5, 15], // لتوسيط النص داخل المستطيل
                                                     color: '#000',
                                                 },
                                             ],
@@ -967,7 +967,7 @@
                                         {
                                             text: `Page Number`,
                                             alignment: 'right',
-                                            margin: [4, 5, 25, 0],
+                                            margin: [4, 15, 25, 0],
                                             color: '#b08c5c',
                                             bold: true,
                                         },
