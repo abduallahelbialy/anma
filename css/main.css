@@ -845,7 +845,7 @@ tbody tr:hover {
   max-width:160px ;
 }
 .date-fake{
-  /* display: none; */
+  display: none;
 }
 .logdd{
   display: none;
