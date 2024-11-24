@@ -845,7 +845,7 @@ tbody tr:hover {
   max-width:160px ;
 }
 .date-fake{
-  display: none;
+  /* display: none; */
 }
 .logdd{
   display: none;
@@ -1252,7 +1252,7 @@ font-size: 4px !important;
   padding: 10px;
 }
 .dev-user-one{
-  width: 218px !important;
+  width: 50% !important;
   margin-top: -20px;
   font-size: 7px;
 }
@@ -1390,7 +1390,7 @@ font-size: 4px !important;
   padding: 10px;
 }
 .dev-user-one{
-  width: 218px !important;
+  width: 50% !important;
   margin-top: -20px;
   font-size: 7px;
 }
