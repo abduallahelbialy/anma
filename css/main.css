@@ -848,7 +848,7 @@ tbody tr:hover {
   display: none;
 }
 .logdd{
-  display: none;
+  /* display: none; */
 }
 /* ////footpdf///// */
 .container-ppp {
@@ -883,7 +883,7 @@ tbody tr:hover {
   font-size: 16px;
 }
 .header-title-s{
- background-color: #d3c5b9;
+ background-color: #cfbeb6;
   color: #000;
   padding: 22px 15px;
   font-size: 16px;
@@ -929,9 +929,9 @@ tbody tr:hover {
   flex: 1;
   /* text-align: center; */
   padding: 10px;
-  background-color: #d3c5b9;
+  background-color: #cfbeb6;
   height: 64px;
-  border: 1px solid #ccc;
+  border: 1px solid #cfbeb6;
   margin: 5px;
   font-weight: bold;
 }
@@ -1291,7 +1291,7 @@ font-size: 4px !important;
     /* ///headerpdf////////// */
  /* ///footer-ppdf/////////// */
   .header-title-s {
-    background-color: #d3c5b9;
+    background-color: #cfbeb6;
     color: #000;
     padding: 22px 14px;
     font-size: 16px;
@@ -1429,7 +1429,7 @@ font-size: 4px !important;
     /* ///headerpdf////////// */
  /* ///footer-ppdf/////////// */
   .header-title-s {
-    background-color: #d3c5b9;
+    background-color: #cfbeb6;
     color: #000;
     padding: 22px 14px;
     font-size: 16px;
