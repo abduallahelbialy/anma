@@ -1002,10 +1002,10 @@
         // Define custom fonts for pdfMake
         pdfMake.fonts = {
             cairo: {
-                normal: "https://anma.vercel.app/fonts/alfont_com_arial-1.ttf",
-                bold: "https://anma.vercel.app/fonts/alfont_com_IBMPlexSansArabic-Medium.ttf",
-                italics: "https://anma.vercel.app/fonts/alfont_com_AlFont_com_arialbd (1).ttf",
-                bolditalics: "https://anma.vercel.app/fonts/alfont_com_AlFont_com_arialbd (1).ttf",
+                normal: "https://anma.vercel.app/fonts/alfont_com_NotoSansArabic_ExtraCondensed-ExtraLight.ttf",
+                bold: "https://anma.vercel.app/fonts/alfont_com_AlFont_com_TheSans-Bold-1.otf",
+                italics: "https://anma.vercel.app/fonts/alfont_com_AlFont_com_TheSans-Bold-1.otf",
+                bolditalics: "https://anma.vercel.app/fonts/alfont_com_AlFont_com_TheSans-Bold-1.otf",
             },
         };
 
@@ -1116,6 +1116,7 @@
                             doc.defaultStyle.alignment = "right";
                             doc.defaultStyle.fontSize = 10;
                             // doc.defaultStyle.padding = 14;
+                            
 
                             doc.defaultStyle.borderLeft = '1px solid green';
                             console.log(doc["styles"]);
